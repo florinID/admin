@@ -120,7 +120,7 @@ class MultiSelect extends BaseFormItem
 		{
 			if ($result instanceof Relation)
 			{
-				$result = $result->lists($part);
+				$result = $result->lists($part)->all();
 			} else
 			{
 				$result = $result->$part();

@@ -214,7 +214,7 @@ abstract class BaseColumn implements ColumnInterface
 		{
 			if ($result instanceof Collection)
 			{
-				$result = $result->lists($part);
+				$result = $result->lists($part)->all();
 			} elseif (is_null($result))
 			{
 				$result = null;
