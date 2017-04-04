@@ -34,7 +34,7 @@ class Select extends BaseFormItem
 			$list = forward_static_call([
 				$this->list,
 				'getList'
-			]);
+			])->all();
 		}
 		if ( ! isset($this->attributes['class']))
 		{
